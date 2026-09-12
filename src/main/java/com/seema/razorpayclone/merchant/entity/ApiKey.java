@@ -18,7 +18,7 @@ public class ApiKey {
     @JoinColumn(name = "merchant_id", nullable = false)
     private Merchant merchant;
 
-    @Column(nullable = false, length = 50)
+    @Column(nullable = false, length = 50, unique = true)
     private String keyId;
 
     @Column(nullable = false, length = 50)
