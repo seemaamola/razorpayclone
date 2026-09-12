@@ -33,7 +33,9 @@ public class Merchant {
     private String businessName;
 
     @Column(length = 50)
+    @Enumerated(EnumType.STRING)
     private BusinessType businessType;
+
     @Column(length = 200)
     private String websiteUrl;
 
